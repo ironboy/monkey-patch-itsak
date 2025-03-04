@@ -1,0 +1,125 @@
+@import url('https://fonts.googleapis.com/css2?family=Bitter:ital,wght@0,400;0,700;1,400;1,700&family=Bubblegum+Sans&family=Quicksand:wght@700&display=swap');
+
+
+body {
+  margin: 0;
+  background-color: rgb(42, 135, 65);
+  font-family: 'Bitter';
+}
+
+h1,
+h2,
+h3,
+h4,
+button,
+.price {
+  font-family: 'Quicksand';
+}
+
+header {
+  background-color: rgb(73, 201, 73);
+}
+
+header h1 {
+  margin: 0;
+  padding: 20px;
+  font-family: 'Bubblegum Sans';
+  font-weight: normal;
+}
+
+main {
+  background-color: white;
+  max-width: 600px;
+  margin: 20px auto;
+  padding: 20px;
+}
+
+.productInList {
+  cursor: pointer;
+  border-radius: 10px;
+  margin-bottom: 20px;
+  padding: 10px 20px;
+  background-color: rgb(208, 236, 208);
+}
+
+.productInList img {
+  float: right;
+  width: 30%;
+}
+
+.product img {
+  float: right;
+  width: 40%;
+  margin: 0 20px 40px 20px;
+}
+
+.backButton {
+  cursor: pointer;
+  border-radius: 5px;
+  padding: 10px 20px;
+  background-color: rgb(42, 135, 65);
+  color: white;
+}
+
+.product .price {
+  text-align: right;
+  padding-right: 15px;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+}
+
+.modal {
+  font-family: Verdana;
+  font-size: 14px;
+  position: absolute;
+  display: none;
+  z-index: 1000;
+}
+
+.modal .box {
+  width: 40vw;
+  background-color: #fff;
+  top: 20vh;
+  left: 30vw;
+  position: fixed;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 3px 3px 5px 6px #aaa;
+}
+
+.modal .hider {
+  width: 100vw;
+  height: 100vh;
+  opacity: 0.2;
+  background-color: #000;
+  top: 0;
+  left: 0;
+  position: fixed;
+}
+
+.modal button {
+  float: right;
+  cursor: pointer;
+  margin-left: 20px;
+  border-radius: 5px;
+  padding: 5px 10px;
+}
+
+.modal input {
+  display: block;
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+img {
+  aspect-ratio: 16/10;
+  object-fit: cover;
+}
+
+product img {
+  aspect-ratio: 14/10
+}
