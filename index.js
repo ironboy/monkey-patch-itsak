@@ -21,7 +21,6 @@ app.get('/api/image/:search', async (req, res) => {
   let imgSrc = $('img[src^="https://media.istockphoto.com/"]').attr('src');
   if (!imgSrc) {
     res.send('');
-    console.log(req.params.search)
     return;
   }
   const img = await (await fetch(imgSrc)).bytes();
